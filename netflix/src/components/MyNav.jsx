@@ -1,4 +1,5 @@
 import netflixLogo from "../assets/netflix_logo.png";
+import avatar from "../assets/avatar.png";
 
 const MyNav = () => {
   return (
@@ -60,13 +61,13 @@ const MyNav = () => {
                     <li className="nav-item">
                         <div className="btn-group">
                             <button type="button" className="btn dropdown-toggle text-secondary border-0"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../assets/avatar.png" id="avatar"/>
+                                dataBsToggle="dropdown" ariaExpanded="false">
+                                <img src={avatar} id="avatar" alt="avatar" style={{width:"35px", height: "35px"}}/>
                             </button>
                             <ul className="dropdown-menu dropdown-menu-dark">
                                 <li><a className="dropdown-item" href="./profile.html">
                                         <div className="d-flex align-items-center">
-                                            <img src="../assets/avatar.png" id="avatar-small"/>
+                                            <img src={avatar} id="avatar-small" style={{width:"23px", height: "23px"}}/>
                                             Epicoder #1
                                         </div>
                                     </a></li>

@@ -36,7 +36,7 @@ const saga2 =saga.toLowerCase();
     <div className="py-3 bg-black ">
       {isLoading && <Loading />}
       <div>
-        <h3 className="text-white mx-5">{saga2.toUpperCase()}</h3>
+        <h4 className="text-white mx-5" style={{textTransform:"capitalize"}}>{saga2}</h4>
       <Carousel>
         <Carousel.Item interval={5000}>
           <div className="d-flex text-center mx-5 gap-2">
